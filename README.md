@@ -9,7 +9,7 @@ El objetivo final del trabajo será predecir si un cliente de un banco va a deja
 En un primer momento queremos intentar de entender la correlación entre las distintas variables que figuran en el data set. Nuestra variable target va a ser Exited, la cual puede tomar los valores de 1 o 0 dependiendo de si el cliente deja el banco o no respectivamente. Todos los análisis están hechos en relación con esta variable target para ver qué peso van a tener dentro del modelo estas variables subyacentes. Además, gracias a estos análisis previos podemos verificar correlaciones fuertes y débiles, positivas y negativas. 
 
 ## Composición de dataset
-
+Shape del dataset: 10.000 (filas), 18 (columnas).
 RowNumber: corresponde a el número de las filas.
 CustomerId: números al azar que identifican a los clientes.
 Surname: apellido de los clientes del banco.
@@ -28,6 +28,10 @@ Complain: si el cliente ha hecho una queja o no.
 Satisfaction Score: score provisto por el cliente por la resolución de su queja.
 Card Type: typo de tarjeta de crédito que tiene el cliente.
 Points Earned: puntos ganados por el cliente al haber usado la tarjeta de crédito.
+
+## Aclaración de composición del dataset 
+
+Hay muchas variables que, a priori, sabemos o intuímos por el conocimiento del negocio que pueden influir en que un cliente se vaya o no de un banco, por lo tanto, son necesarias para el modelo. Ahora, tomando en cuenta la muestra de clientes del banco que tenemos, vemos que hay muchos casos en que no necesariamente la relación es tan predominante como pensaríamos.
 
 ## Link a la notebook
 
