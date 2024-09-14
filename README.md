@@ -9,25 +9,29 @@ El objetivo final del trabajo será predecir si un cliente de un banco va a deja
 En un primer momento queremos intentar de entender la correlación entre las distintas variables que figuran en el data set. Nuestra variable target va a ser Exited, la cual puede tomar los valores de 1 o 0 dependiendo de si el cliente deja el banco o no respectivamente. Todos los análisis están hechos en relación con esta variable target para ver qué peso van a tener dentro del modelo estas variables subyacentes. Además, gracias a estos análisis previos podemos verificar correlaciones fuertes y débiles, positivas y negativas. 
 
 ## Composición de dataset
+Nombre del dataset que usé: Customer-Churn-Records.csv
 Shape del dataset: 10.000 (filas), 18 (columnas).
-RowNumber: corresponde a el número de las filas.
-CustomerId: números al azar que identifican a los clientes.
-Surname: apellido de los clientes del banco.
-CreditScore: score de crédito, podría tener cierto efecto en churn (los clientes con mejor score son menos propensos a dejar el banco).
-Geography: país de locación del cliente (puede afectar a la decisión de dejar el banco o no).
-Gender: genero, femenino o masculino (puede afectar a la decisión de dejar el banco o no).
-Age: edad del cliente (los clientes "mayores" son menos propensos a dejar el banco que los más jóvenes).
-Tenure: número de años que el individuo ha sido cliente del banco. Generalmente, clientes más antiguos son más leales y tienden a irse del banco en menor medida.
-Balance: deuda en el banco. Suele ser un buen indicador de churn. Personas con mayor deuda en sus cuentas son menos propensas a abandonar el banco que los que tienen menos deuda. 
-NumOfProducts: número de productos que el cliente ha comprado en el banco.
-HasCrCard: denota si el cliente tiene o no una tarjeta de crédito. Esta columna puede ser relevante ya que aquellos que tienen tarjetas son menos propensos a dejar el banco.
-IsActiveMember: cliente activo (son menos propensos a dejar el banco lógicamente).
-EstimatedSalary: salario estimado, al igual que la deuda (Balance) personas con menor salario son más propensas a dejar el banco.
-Exited: si el cliente dejó o no efectivamente el banco.
-Complain: si el cliente ha hecho una queja o no.
-Satisfaction Score: score provisto por el cliente por la resolución de su queja.
-Card Type: typo de tarjeta de crédito que tiene el cliente.
-Points Earned: puntos ganados por el cliente al haber usado la tarjeta de crédito.
+
+### Columnas
+Las columnas del dataset son:
+- RowNumber: corresponde a el número de las filas.
+- CustomerId: números al azar que identifican a los clientes.
+- Surname: apellido de los clientes del banco.
+- CreditScore: score de crédito, podría tener cierto efecto en churn (los clientes con mejor score son menos propensos a dejar el banco).
+- Geography: país de locación del cliente (puede afectar a la decisión de dejar el banco o no).
+- Gender: genero, femenino o masculino (puede afectar a la decisión de dejar el banco o no).
+- Age: edad del cliente (los clientes "mayores" son menos propensos a dejar el banco que los más jóvenes).
+- Tenure: número de años que el individuo ha sido cliente del banco. Generalmente, clientes más antiguos son más leales y tienden a irse del banco en menor medida.
+- Balance: deuda en el banco. Suele ser un buen indicador de churn. Personas con mayor deuda en sus cuentas son menos propensas a abandonar el banco que los que tienen menos deuda. 
+- NumOfProducts: número de productos que el cliente ha comprado en el banco.
+- HasCrCard: denota si el cliente tiene o no una tarjeta de crédito. Esta columna puede ser relevante ya que aquellos que tienen tarjetas son menos propensos a dejar el banco.
+- IsActiveMember: cliente activo (son menos propensos a dejar el banco lógicamente).
+- EstimatedSalary: salario estimado, al igual que la deuda (Balance) personas con menor salario son más propensas a dejar el banco.
+- Exited: si el cliente dejó o no efectivamente el banco.
+- Complain: si el cliente ha hecho una queja o no.
+- Satisfaction Score: score provisto por el cliente por la resolución de su queja.
+- Card Type: typo de tarjeta de crédito que tiene el cliente.
+- Points Earned: puntos ganados por el cliente al haber usado la tarjeta de crédito.
 
 ## Aclaración de composición del dataset 
 
