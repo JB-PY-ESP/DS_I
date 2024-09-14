@@ -9,8 +9,8 @@ El objetivo final del trabajo será predecir si un cliente de un banco va a deja
 En un primer momento queremos intentar de entender la correlación entre las distintas variables que figuran en el data set. Nuestra variable target va a ser Exited, la cual puede tomar los valores de 1 o 0 dependiendo de si el cliente deja el banco o no respectivamente. Todos los análisis están hechos en relación con esta variable target para ver qué peso van a tener dentro del modelo estas variables subyacentes. Además, gracias a estos análisis previos podemos verificar correlaciones fuertes y débiles, positivas y negativas. 
 
 ## Composición de dataset
-Nombre del dataset que usé: Customer-Churn-Records.csv
-Shape del dataset: 10.000 (filas), 18 (columnas).
+- Nombre del dataset que usé: Customer-Churn-Records.csv
+- Shape del dataset: 10.000 (filas), 18 (columnas).
 
 ### Columnas
 Las columnas del dataset son:
